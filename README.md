@@ -14,23 +14,22 @@ The GitHub Automator is a Rust-based tool designed to streamline and automate co
 
 To get started with the GitHub Automator, follow these steps:
 
-1. **Installation**: Clone the repository and compile the Rust project using Cargo.
-   ``` 
-   git clone https://github.com/your-username/github-automator.git
-   cd github-automator
+1. **Installation**: Clone the repository, compile the Rust project using Cargo, and install the tool globally.
+   ```bash
+   git clone https://github.com/tusharpamnani/GitHub-Automator.git
+   cd GitHub-Automator
    cargo build --release
-   ```
-  After building the package, install it globally on your device to run it.
-   ```
    cargo install --path .
    ```
 
-1. **Configuration**: Configure the tool with your GitHub credentials and repository information. You can set up authentication tokens, repository URLs, and default settings for commit messages.
-
-2. **Usage**: Use the command-line interface to execute Git operations and automate your workflow. Refer to the documentation for detailed instructions on available commands and options.
-
-   Once installed globally, you can run the tool using the `git_automation` command:
+2. **Configuration**: Configure the tool with your GitHub credentials and repository information. If not initialized already, initialize an empty Git repository and add the repository URL.
+   ```bash
+   git init
+   git remote add origin https://github.com/your-username/repository-name.git
    ```
+
+3. **Usage**: Use the command-line interface to execute Git operations and automate your workflow.
+   ```bash
    git_automation
    ```
 
