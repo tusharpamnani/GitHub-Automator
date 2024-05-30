@@ -99,8 +99,8 @@ fn main() {
             eprintln!("Error: Failed to add remote repository");
             exit(1);
         }
-    }
 
-    let branch = matches.get_one::<String>("branch").map(String::as_str);
-    update_commit_push(branch);
+        let branch = matches.get_one::<String>("branch").map(String::as_str);
+        update_commit_push(branch);
+    }
 }
