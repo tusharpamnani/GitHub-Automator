@@ -2,7 +2,13 @@
 name = "git_automation"
 version = "0.1.0"
 edition = "2021"
-
+authors = ["tusharpamnani"]
+description = "A basic CLI to automate the git workflow"
+readme = "README.md"
+repository = "https://github.com/tusharpamnani/Github-Automation"
+license = "MIT"
+categories = ["command-line-utilities", "development-tools::cargo-plugins"]
+ 
 [dependencies]
 clap = { version = "4.5.4", features = ["derive"] }
 names = "0.14.0"
