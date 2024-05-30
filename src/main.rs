@@ -3,17 +3,7 @@ use names::Generator;
 use std::process::{Command as ProcessCommand, exit};
 
 fn update_commit_push(branch: Option<&str>) {
-    let init_command = ProcessCommand::new("git")
-        .arg("init")
-        .output()
-        .expect("Failed to execute git init command");
-
-    if !init_command.status.success() {
-        eprintln!("Error: Failed to initialize git repo");
-        exit(1);
-    }
-
-    let add_command = ProcessCommand::new("git")
+        let add_command = ProcessCommand::new("git")
         .arg("add")
         .arg("-A")
         .output()
@@ -87,6 +77,16 @@ fn main() {
         .get_matches();
 
     if let Some(link) = matches.get_one::<String>("link") {
+        let init_command = ProcessCommand::new("git")
+            .arg("init")
+            .output()
+            .expect("Failed to execute git init command");
+
+        if !init_command.status.success() {
+            eprintln!("Error: Failed to initialize git repo");
+            exit(1);
+        }
+
         let remote_command = ProcessCommand::new("git")
             .arg("remote")
             .arg("add")
@@ -100,7 +100,9 @@ fn main() {
             exit(1);
         }
 
-        let branch = matches.get_one::<String>("branch").map(String::as_str);
-        update_commit_push(branch);
+        let branch = matches.get_one::<String>("branch");
+        update_commit_push(branch.map(|x| x.as_str()));
+    } else {
+        update_commit_push(None);
     }
 }
