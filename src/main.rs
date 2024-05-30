@@ -1,6 +1,5 @@
 use clap::{Arg, Command};
 use names::Generator;
-use core::ascii;
 use std::process::{Command as ProcessCommand, exit};
 
 fn update_commit_push(branch: Option<&str>) {

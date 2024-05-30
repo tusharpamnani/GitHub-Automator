@@ -1,6 +1,6 @@
 [package]
 name = "git_automation"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["tusharpamnani"]
 description = "A basic CLI to automate the git workflow"
