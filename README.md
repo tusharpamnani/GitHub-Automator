@@ -30,7 +30,7 @@ To get started with the GitHub Automator, follow these steps:
 
 3. **Usage**: Use the command-line interface to execute Git operations and automate your workflow.
    ```bash
-   git_automation --link <repository-link> --branch <branch-name>
+   git_automate --link <repository-link> --branch <branch-name>
    ```
 
 ### Command-Line Arguments
