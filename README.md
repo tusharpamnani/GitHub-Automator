@@ -31,6 +31,7 @@ To get started with the GitHub Automator, follow these steps:
 
 - `--link` or `-l`: The URL of the GitHub repository. This sets the remote origin if not already set.
 - `--branch` or `-b`: The branch name to push to. If not specified, defaults to `master`.
+- `--help` or `-h`: Displays this help message and exits. Use this option to get information about the available command-line arguments and their usage.
 
 ## Contributing
 
