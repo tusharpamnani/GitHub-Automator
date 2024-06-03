@@ -22,13 +22,7 @@ To get started with the GitHub Automator, follow these steps:
    cargo install --path .
    ```
 
-2. **Configuration**: Configure the tool with your GitHub credentials and repository information. If not initialized already, initialize an empty Git repository and add the repository URL.
-   ```bash
-   git init
-   git remote add origin https://github.com/your-username/repository-name.git
-   ```
-
-3. **Usage**: Use the command-line interface to execute Git operations and automate your workflow.
+2. **Usage**: Use the command-line interface to execute Git operations and automate your workflow.
    ```bash
    git_automate --link <repository-link> --branch <branch-name>
    ```
