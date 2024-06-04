@@ -1,4 +1,4 @@
-# GitHub Automator
+# 🚀GitHub Automator🚀
 
 The GitHub Automator is a Rust-based tool designed to streamline and automate common Git operations on GitHub repositories. Whether you're adding, committing, and pushing changes, generating commit messages, or managing pull requests, this tool simplifies the process, saving you time and effort.
 
@@ -20,24 +20,20 @@ The GitHub Automator utilizes Rust's robust libraries to interact with Git and G
 - **Commit Changes**: A commit is made with an automatically generated commit message using a names generator.
 - **Push Changes**: Finally, the tool pushes the committed changes to the specified branch (defaulting to master if no branch is specified).
 
-## Getting Started
+## 🚀Getting Started 🚀
 
-To get started with the GitHub Automator, follow these steps:
+1. **Install the Tool:**
+```bash
+cargo install git_automate
+```
+2. **Add to Your Project:**
+```bash
+cargo add git_automate
+```
+3. **Configure Your Setup:** Set up with your GitHub credentials and repository info.
+4. **Automate Your Workflow:** Use the command-line interface to streamline your Git operations.
 
-1. **Installation**: Clone the repository, compile the Rust project using Cargo, and install the tool globally.
-   ```bash
-   git clone https://github.com/tusharpamnani/GitHub-Automator.git
-   cd GitHub-Automator
-   cargo build --release
-   cargo install --path .
-   ```
-
-2. **Usage**: Use the command-line interface to execute Git operations and automate your workflow.
-   ```bash
-   git_automate --link <repository-link> --branch <branch-name>
-   ```
-
-### Command-Line Arguments
+## Command-Line Arguments
 
 - `--link` or `-l`: The URL of the GitHub repository. This sets the remote origin if not already set.
 - `--branch` or `-b`: The branch name to push to. If not specified, defaults to `master`.
