@@ -10,6 +10,16 @@ The GitHub Automator is a Rust-based tool designed to streamline and automate co
 - **Customization Options**: Tailor the tool to your needs with customizable settings for commit message generation, branch management, and more.
 - **User-Friendly Interface**: Enjoy a user-friendly command-line interface that makes Git operations intuitive and accessible.
 
+## 🔧 How It Works 🔧
+
+The GitHub Automator utilizes Rust's robust libraries to interact with Git and GitHub. Here’s a high-level overview of its workflow:
+
+- **Initialization**: The tool initializes a Git repository (if not already initialized) and sets the remote origin based on the provided repository link.
+- **Adding Changes**: It stages all changes in the repository using the git add -A command.
+- **Status Check**: The tool executes git status to display the current status of the repository, ensuring all changes are staged correctly.
+- **Commit Changes**: A commit is made with an automatically generated commit message using a names generator.
+- **Push Changes**: Finally, the tool pushes the committed changes to the specified branch (defaulting to master if no branch is specified).
+
 ## Getting Started
 
 To get started with the GitHub Automator, follow these steps:
